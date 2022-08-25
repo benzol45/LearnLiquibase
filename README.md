@@ -1,6 +1,9 @@
 #Liquibase  
 Liquibase позволяет описать/хранить и применять/откатывать изменения для БД.
-Аналог линейного (без ветвей) GIT для базы.
+Аналог линейного (без ветвей) GIT для базы.  
+https://youtu.be/JTdcd4DYgEI  
+https://habr.com/ru/post/460377/  
+https://habr.com/ru/post/460907/  
 
 ###Доступные опции в spring-boot   
 https://docs.liquibase.com/tools-integrations/springboot/springboot.html
