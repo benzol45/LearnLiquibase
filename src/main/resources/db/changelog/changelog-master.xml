@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+        http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+    <preConditions>
+        <dbms type="postgresql"/>
+    </preConditions>
+
+    <changeSet author="author" id="0">
+        <tagDatabase tag="initial"/>
+    </changeSet>
+
+    <include file="v-1.0.0/changelog-v-1.0.0.xml" relativeToChangelogFile="true"/>
+
+    <changeSet author="author" id="100">
+        <tagDatabase tag="version 1.0"/>
+    </changeSet>
+
+    <include file="v-2.0.0/changelog-v-2.0.0.xml" relativeToChangelogFile="true"/>
+
+    <changeSet author="author" id="200">
+        <tagDatabase tag="version 2.0"/>
+    </changeSet>
+
+    <include file="v-3.0.0/changelog-v-3.0.0.xml" relativeToChangelogFile="true"/>
+
+    <changeSet author="author" id="300">
+        <tagDatabase tag="version 3.0"/>
+    </changeSet>
+
+</databaseChangeLog>

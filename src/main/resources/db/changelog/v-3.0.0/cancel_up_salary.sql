@@ -1,0 +1,1 @@
+UPDATE person SET salary = salary - 100;
